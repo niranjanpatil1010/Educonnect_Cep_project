@@ -46,7 +46,4 @@ python app.py
 ### 5. Open in browser
 Navigate to `http://127.0.0.1:5000` in your web browser.
 
-## Test Accounts (Created on Initialization)
-- **Student:** `student1@test.com` / `password`
-- **NGO Admin:** `ngo1@test.com` / `password`
-- **Mentor:** `mentor1@test.com` / `password`
+
