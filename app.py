@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, render_template
 from flask_cors import CORS
 import db
+import os
 
 # Import Blueprints
 from routes.auth_routes import auth_bp
@@ -70,5 +71,8 @@ def admin_dashboard():
 def health():
     return jsonify({"status": "ok", "message": "Community Platform Flask API is running"})
 
-if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
